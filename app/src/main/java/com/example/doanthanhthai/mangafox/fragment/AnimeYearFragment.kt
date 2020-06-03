@@ -7,20 +7,20 @@ import android.graphics.drawable.BitmapDrawable
 import android.os.AsyncTask
 import android.os.Bundle
 import android.os.Handler
-import android.support.v4.app.ActivityOptionsCompat
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
-import android.support.v4.util.Pair
-import android.support.v4.widget.NestedScrollView
-import android.support.v7.app.AlertDialog
-import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.core.app.ActivityOptionsCompat
+import androidx.fragment.app.Fragment
+import androidx.core.util.Pair
+import androidx.core.widget.NestedScrollView
+import androidx.appcompat.app.AlertDialog
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.RelativeLayout
 import android.widget.Toast
+import androidx.fragment.app.FragmentManager
 import com.example.doanthanhthai.mangafox.DetailActivity
 import com.example.doanthanhthai.mangafox.R
 import com.example.doanthanhthai.mangafox.adapter.LatestEpisodeAdapter
@@ -47,7 +47,7 @@ class AnimeYearFragment : Fragment(), LatestEpisodeAdapter.OnLatestEpisodeAdapte
         when (v?.id) {
             R.id.toolbar_back_btn -> {
                 val fm: FragmentManager? = activity?.supportFragmentManager
-                fm?.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE)
+                fm?.popBackStack(null, androidx.fragment.app.FragmentManager.POP_BACK_STACK_INCLUSIVE)
             }
 
             R.id.menu_btn -> {
@@ -70,10 +70,6 @@ class AnimeYearFragment : Fragment(), LatestEpisodeAdapter.OnLatestEpisodeAdapte
     private var mTotalPage: Int = 1
     private var mCurrentPage: Int = 1
     private var currentUrl: String = ""
-
-    override fun onAttach(context: Context?) {
-        super.onAttach(context)
-    }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_anime_genre, container, false)

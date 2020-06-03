@@ -4,16 +4,16 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.AsyncTask;
-import android.os.Handler;
-import android.support.v4.app.ActivityOptionsCompat;
-import android.support.v4.util.Pair;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.core.app.ActivityOptionsCompat;
+import androidx.core.util.Pair;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.SearchView;
-import android.support.v7.widget.Toolbar;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.SearchView;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -31,8 +31,6 @@ import com.example.doanthanhthai.mangafox.adapter.ResultAnimeAdapter;
 import com.example.doanthanhthai.mangafox.model.Anime;
 import com.example.doanthanhthai.mangafox.share.DynamicColumnHelper;
 import com.example.doanthanhthai.mangafox.share.PreferenceHelper;
-import com.example.doanthanhthai.mangafox.share.Utils;
-import com.example.doanthanhthai.mangafox.widget.AutoFitGridLayoutManager;
 
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
@@ -95,7 +93,7 @@ public class SearchAnimeActivity extends BaseActivity implements SearchView.OnQu
         searchView.onActionViewExpanded();
         searchView.requestFocus();
         searchView.setOnQueryTextListener(this);
-        EditText searchEditText = (EditText) searchView.findViewById(android.support.v7.appcompat.R.id.search_src_text);
+        EditText searchEditText = (EditText) searchView.findViewById(androidx.appcompat.R.id.search_src_text);
         searchEditText.setTextColor(getResources().getColor(R.color.black));
         searchEditText.setHintTextColor(getResources().getColor(R.color.black));
 

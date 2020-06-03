@@ -2,10 +2,10 @@ package com.example.doanthanhthai.mangafox.base
 
 import android.os.Bundle
 import android.os.Handler
-import android.support.annotation.LayoutRes
-import android.support.annotation.StringRes
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.Toolbar
+import androidx.annotation.LayoutRes
+import androidx.annotation.StringRes
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import android.view.View
 import com.example.doanthanhthai.mangafox.R
 

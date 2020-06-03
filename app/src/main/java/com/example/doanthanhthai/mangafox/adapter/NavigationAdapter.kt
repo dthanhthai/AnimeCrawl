@@ -1,11 +1,11 @@
 package com.example.doanthanhthai.mangafox.adapter
 
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 import com.example.doanthanhthai.mangafox.R
 import com.example.doanthanhthai.mangafox.model.NavigationModel
 import kotlinx.android.synthetic.main.item_navigation.view.*;
@@ -44,9 +44,9 @@ class NavigationAdapter(listItem: MutableList<NavigationModel>, listener: Naviga
         }
     }
 
-    class ViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView) {
-        var iconIv: ImageView = itemView?.ivNavigation!!
-        var nameTv: TextView = itemView?.tvNavigationName!!
+    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        var iconIv: ImageView = itemView.ivNavigation!!
+        var nameTv: TextView = itemView.tvNavigationName!!
 
         fun bindView(data: NavigationModel) {
             nameTv.text = data.name

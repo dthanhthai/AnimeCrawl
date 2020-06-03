@@ -3,10 +3,10 @@ package com.example.doanthanhthai.mangafox;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -21,7 +21,7 @@ public class MangaFoxActivity extends AppCompatActivity {
     private WebView webView;
     private FloatingActionButton fab;
 //    private static final String URL = "http://m.mangafox.me/";
-    private static final String URL = "https://truyenqq.com/index.html";
+    private static final String URL = "http://truyenqq.com/";
     //    private static final String URL = "http://www.mangapanda.com/";
     private AlertDialog alertDialog;
     private ProgressBar progressBar;
@@ -35,8 +35,8 @@ public class MangaFoxActivity extends AppCompatActivity {
         mapView();
         initData();
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+//        ActionBar actionBar = getSupportActionBar();
+//        actionBar.hide();
 
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setScrollBarStyle(View.SCROLLBARS_OUTSIDE_OVERLAY);

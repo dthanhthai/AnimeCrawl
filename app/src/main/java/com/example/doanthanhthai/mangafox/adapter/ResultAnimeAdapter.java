@@ -1,8 +1,8 @@
 package com.example.doanthanhthai.mangafox.adapter;
 
 import android.content.Context;
-import android.support.v7.widget.PopupMenu;
-import android.support.v7.widget.RecyclerView;
+import androidx.appcompat.widget.PopupMenu;
+import androidx.recyclerview.widget.RecyclerView;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -17,10 +17,8 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.example.doanthanhthai.mangafox.R;
-import com.example.doanthanhthai.mangafox.manager.AnimeDataManager;
 import com.example.doanthanhthai.mangafox.model.Anime;
 import com.example.doanthanhthai.mangafox.share.DynamicColumnHelper;
-import com.example.doanthanhthai.mangafox.share.PreferenceHelper;
 
 import java.util.ArrayList;
 import java.util.List;

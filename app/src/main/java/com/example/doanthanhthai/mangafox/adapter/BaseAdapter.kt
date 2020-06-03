@@ -1,6 +1,6 @@
 package com.example.doanthanhthai.mangafox.adapter
 
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.ViewGroup
 import com.example.doanthanhthai.mangafox.model.Anime
 

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">animehay.tv</domain>
+        <domain includeSubdomains="true">truyenqq.com</domain>
+    </domain-config>
+</network-security-config>
